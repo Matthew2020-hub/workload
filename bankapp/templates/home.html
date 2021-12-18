@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-bank Customer Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <link rel="stylesheet" href="{% static './css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+{% block content %}
+    <body>
+        <div class="container">
+            <div class="logo">
+                
+            </div>
+            <img src="{% static './img/tut2.jpg' %}">
+            
+            <div class="text">
+                <div class="centered">
+                    <img id="logo"src="{% static './img/logo.png' %}">
+                    <h2>Welcome to E-Bank Help Line</h2>
+                </div>
+                <div class="intro">
+                    <h3>Any Failed Transactions?</h3>
+                    <h3>Difficulty in using mobile app?</h3>
+                    <h3>Our helpline is at your service...</h3>
+                </div>
+            </div>
+        <!-- </div>
+        <ion-nav-buttons side="right">
+            <button id="back" type="button"><a href="{% static './home' %}">Back</a></button>
+        </ion-nav-buttons>
+        </div> -->
+            <div class="container-1">
+           
+            <div class="top-right">
+                <nav>
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'registration' %}">Sign Up</a>
+                    <a href="{% url 'login' %}">Login</a>
+                    <a href="{% url 'helpline' %}">Customer helpline</a>
+        
+                </nav>
+            </div>
+            
+            
+        </div>
+
+    </body>
+</html>
+{% endblock %}

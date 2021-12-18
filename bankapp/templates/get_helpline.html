@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help Desk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './css/get_helpline.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h2>E-Bank's Helpline</h2>
+        </div>
+        <div class="country" id="country">
+           
+            <form action="{% url 'helpline' %}" method="GET">
+                {{form.as_p}}
+                <div>
+                    <label name="Country" id="Country">Country: {{country}}</label>
+                </div>
+                <div>
+                    <label name="Phone number" id="Phone number" for="">Phone number:   {{phone}}</label>
+                </div>
+                <div>
+                    <label name="Branch Name" id="Branch Name" for="">Branch Name:  {{branch}}</label>  
+                </div>   
+            </form>
+          
+        </div>
+</body>
+
+</html>
